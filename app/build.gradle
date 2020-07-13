@@ -30,4 +30,10 @@ dependencies {
 //    引入Material库
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+//    GitHub的fabmenu开源组件
+    implementation 'com.github.clans:fab:1.6.4'
+
+//    圆形头像
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }

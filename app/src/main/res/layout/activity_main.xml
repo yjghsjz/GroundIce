@@ -18,23 +18,55 @@
 <!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
 <!--            app:popupTheme="@style/Theme.AppCompat.Light"-->
 <!--            />-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="探冰"
-            android:layout_gravity="center"/>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
+<!-- 右下角fabmenu的实现-->
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab_menu"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="bottom|end"
-            android:layout_margin="16dp"
-            android:src="@drawable/iceberg"
-            android:backgroundTint="#EBEFF1"
-            app:rippleColor="#95D1F5"
-            />
-        <include layout="@layout/frosted_style"/>
+            android:layout_margin="20dp"
+            app:menu_colorNormal="#EBEFF1"
+            app:menu_colorPressed="#6DBFF1"
+            app:menu_icon="@drawable/iceberg_40dp"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_23dp"
+                app:fab_colorNormal="#EBEFF1"
+                app:fab_colorPressed="#6DBFF1"
+                app:fab_size="mini"
+                app:fab_label="我的" />
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_25dp"
+                app:fab_colorNormal="#EBEFF1"
+                app:fab_colorPressed="#6DBFF1"
+                app:fab_size="mini"
+                app:fab_label="发表" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_23dp"
+                app:fab_colorNormal="#EBEFF1"
+                app:fab_colorPressed="#6DBFF1"
+                app:fab_size="mini"
+                app:fab_label="登录" />
+
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+
+        <include layout="@layout/frosted_style" />
 
     </FrameLayout>
 

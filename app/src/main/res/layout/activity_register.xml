@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register"
+    tools:context=".user.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_head_protrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/head_protrait"
+            android:src="@drawable/ice_head"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:civ_border_color="#F5F2F2"
+            app:civ_border_width="2dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_input_register"
+        app:layout_constraintTop_toBottomOf="@+id/layout_head_protrait"
+        android:hint="   请输入用户名"
+        android:textColorHint="@color/c2"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_input_register"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        android:hint="   请输入密码"
+        android:textColorHint="@color/c2"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        />
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_checkPassword"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/bg_input_register"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/et_password"-->
+<!--        android:hint="   请再次输入密码"-->
+<!--        android:textColorHint="@color/c2"-->
+<!--        android:maxLines="30"-->
+<!--        android:textSize="15sp"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/bt_toLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        android:text="登录"/>
+
+    <Button
+        android:id="@+id/bt_toRegister"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/bt_toLogin"
+        android:text="注册"/>
+
+    <Button
+        android:id="@+id/bt_toQQ"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/bt_toRegister"
+        android:text="QQ登录"/>
+
+    <include
+        layout="@layout/activity_main"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
