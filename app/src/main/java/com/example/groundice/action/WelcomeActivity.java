@@ -1,8 +1,7 @@
-package com.example.groundice.user;
+package com.example.groundice.action;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -62,7 +61,7 @@ public class WelcomeActivity extends  AppCompatActivity {
                 if (isStartMain){
                     setting.edit().putBoolean("FIRST",false).apply();
                     //如果没有进入过主界面,直接进引导页面
-                    startActivity(new Intent(WelcomeActivity.this,GuideActivity.class));
+                    startActivity(new Intent(WelcomeActivity.this, GuideActivity.class));
 
                 }else {
                     //如果进入过主界面,直接进入主页面

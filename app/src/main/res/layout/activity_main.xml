@@ -50,7 +50,7 @@
                 app:fab_colorNormal="#EBEFF1"
                 app:fab_colorPressed="#6DBFF1"
                 app:fab_size="mini"
-                app:fab_label="发表" />
+                app:fab_label="发布" />
 
             <com.github.clans.fab.FloatingActionButton
                 android:id="@+id/fab_login"
@@ -65,8 +65,6 @@
 
         </com.github.clans.fab.FloatingActionMenu>
 
-
-        <include layout="@layout/frosted_style" />
 
     </FrameLayout>
 

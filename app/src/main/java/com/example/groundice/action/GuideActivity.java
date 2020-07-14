@@ -1,4 +1,4 @@
-package com.example.groundice.user;
+package com.example.groundice.action;
 
 import androidx.appcompat.app.AppCompatActivity;
 
